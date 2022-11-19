@@ -1,5 +1,5 @@
 {% set name = "skope-rules" %}
-{% set version = "1.0.1" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/scikit-learn-contrib/skope-rules/archive/v{{ version }}.tar.gz
-  sha256: 733a1ee9c4125fde221f0ccc9ec76f35408daf29a99878e271f357976974b295
+  sha256: af3ee6db100d59aad3da651b6dfa9adb5ad217d72e6b554180a87e2d8cdf3616
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
